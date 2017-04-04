@@ -47,6 +47,21 @@ def naked_twins(values):
                 for digit in twin_dict[i][1]:
                     values[box] = values[box].replace(digit,'')
     return values
+    # two_values = [box for box in values.keys() if len(values[box]) == 2]
+    # twin_values = []
+    # for box in two_values:
+    #     digit = values[box]
+    #     for peer in peers[box]:
+    #         if values[peer] == digit:
+    #             twin_values.append(peer)
+    #     # twin_values = set([peer in peers[box] if values[peer] == digit])
+    # # Eliminate the naked twins as possibilities for their peers
+    # for box in twin_values:
+    #     digit = values[box]
+    #     for peer in peers[box]:
+    #         if peer not in twin_values:
+    #             values[peer] = values[peer].replace(digit,'')
+    # return values
 
 def cross(A, B):
     "Cross product of elements in A and elements in B."
