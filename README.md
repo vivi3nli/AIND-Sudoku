@@ -3,11 +3,11 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: Constraint Propagation is all about using local constraints in a space (in the case of Sudoku, the constraints of each square) to dramatically reduce the search space. In the case of naked twins problem, the constraints mainly lies in every unit, if there exists a pair (or several pairs) of twin boxes, which are two boxes containing the identical two digits, the rest boxes of this unit will not possibily contain these two digits. So in solving naked twins problem we should first find the twin pairs and eliminate the two digits in other boxes in this unit.(the main difference to function eliminite is that it cannot be considered in peers dictionary, rather this time we have to go through every unit)
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: I simply added the diagonal units in unit list and everything else is the same.
 
 ### Install
 
